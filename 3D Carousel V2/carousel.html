@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>3D Carousel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    
+    <body>
+
+        <div style="position: absolute; display: inline-block; max-width: 600px; max-height: 600px; top:50%; left:50%; transform: translate(-50%, -50%);">
+            <div style="position: absolute;top: 10%;left: 10%;transform: translate(-20%, -35%);z-index: 10;">
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="carousel-item">1</div>
+                        <div class="carousel-item">2</div>
+                        <div class="carousel-item">3</div>
+                        <div class="carousel-item">4</div>
+                        <div class="carousel-item">5</div>
+                        <div class="carousel-item">6</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Image -->
+            <div id="image-container">
+                <img src="assets/image4.png" alt="Description">
+            </div>
+        </div>
+
+
+        <div class="controls">
+            <label for="speedControl">Speed:</label>
+            <input type="number" id="speedControl" value="0.5" step="0.1">
+        </div>
+
+        
+        <script src="src\carousel.js" async defer></script>
+
+    </body>
+</html>
