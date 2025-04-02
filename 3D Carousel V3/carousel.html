@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>3D Carousel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    
+    <body>
+
+        <div style="position: absolute; display: inline-block; max-width: 600px; max-height: 600px; top:50%; left:50%; transform: translate(-50%, -50%);">
+            <div id="carousel-position" style="position: absolute;top: 10%;left: 10%; transform: translate(-20%, -35%); z-index: 10;">
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="carousel-item">1</div>
+                        <div class="carousel-item">2</div>
+                        <div class="carousel-item">3</div>
+                        <div class="carousel-item">4</div>
+                        <div class="carousel-item">5</div>
+                        <div class="carousel-item">6</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Image -->
+            <div id="image-container">
+                <img src="assets/image1-1.png" alt="Description">
+            </div>
+        </div>
+
+
+        <div class="controls" style="min-width: 400px; height: auto; padding: 20px; display: grid; flex-direction: column; gap: 15px;">
+            <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <label for="speedControl" style="font-size: 30px; width: 120px;">Speed:</label>
+                <input type="number" id="speedControl" style="font-size: 20px;" value="0.5" step="0.1" style="width: 80px;">
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <label for="xPosControl" style="font-size: 30px; width: 120px;">x Pos(%):</label>
+                <input type="number" id="xPosControl" style="font-size: 20px;" value="-7" step="1" style="width: 80px;">
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <label for="yPosControl" style="font-size: 30px; width: 120px;">y Pos(%):</label>
+                <input type="number" id="yPosControl" style="font-size: 20px;" value="45" step="1" style="width: 80px;">
+            </div>
+        </div>
+
+        
+        <script src="src\carousel.js" async defer></script>
+        <script src="src\positionControl.js" async defer></script>
+
+    </body>
+</html>
+
